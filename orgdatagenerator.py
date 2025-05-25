@@ -114,7 +114,8 @@ def check_org_chart(employees):
     return all(trace(emp, set()) for emp in employees)
 
 # ------------ Streamlit App ------------
-st.title("Org Hierarchy Generator")
+st.title("Org Hierarchy Data Generator")
+st.write("*Developed by* Prabhakar Pandey")
 
 num = st.number_input(
     "Number of Employees (max 20000)", min_value=1, max_value=20000, value=1000, step=1
